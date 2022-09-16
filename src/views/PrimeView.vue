@@ -11,15 +11,12 @@
       class="ma-2"
       outlined
       color="indigo" v-on:click="
-      expand2 = !expand2
       resetText()
       isPrime(value)
       resetNums()
       generateNums()
     ">Show all Prime Numbers</v-btn>
-    <v-expand-x-transition>
-      <div v-show="expand2" class ="ma-2" ><p>{{text}}</p></div>
-    </v-expand-x-transition>
+    <div class ="ma-2" ><p>{{text}}</p></div>
     <div class ="ma-2">{{nums}}</div>
 
     </div>
